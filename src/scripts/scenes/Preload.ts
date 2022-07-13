@@ -1,6 +1,8 @@
 import { State } from "../types";
 
 const background = require('../../assets/images/background.png');
+const scroll = require('../../assets/images/scroll.png');
+const scrollBackground = require('../../assets/images/scroll-background.png');
 const bigButtonActive = require('../../assets/images/big-button-active.png');
 const bigButtonDisable = require('../../assets/images/big-button-disable.png');
 const buttonActive = require('../../assets/images/button-active.png');
@@ -61,6 +63,8 @@ export default class Preload extends Phaser.Scene {
 
   private preloadAssets(): void {
     this.load.image('background', background);
+    this.load.image('scroll', scroll);
+    this.load.image('scroll-background', scrollBackground);
     this.load.image('big-button-active', bigButtonActive);
     this.load.image('big-button-disable', bigButtonDisable);
     this.load.image('button-active', buttonActive);
