@@ -1,11 +1,5 @@
-import { Modals, State, Teams } from '../types';
-import Utils from '../libs/Utils';
-import TeamScreen from '../components/Screens/TeamScreen';
-import MainScreen from '../components/Screens/MainScreen';
-import RaitingsScreen from '../components/Screens/RaitingsScreen';
-import TutorialScreen from '../components/Screens/TutorialScreen';
-import EndScreen from '../components/Screens/EndScreen';
-
+import { Fonts, Signs, State } from '../types';
+import langs from '../langs';
 export default class Start extends Phaser.Scene {
   public state: State;
 
@@ -18,18 +12,22 @@ export default class Start extends Phaser.Scene {
   }
 
   public create(): void {
-    if (this.state.team === Teams.None) {
-      new TeamScreen(this);
-    } else if (this.state.modal !== Modals.None) {
-      if (this.state.modal === Modals.Tutorial) {
-        new TutorialScreen(this);
-      } else if (this.state.modal === Modals.Raitings) {
-        new RaitingsScreen(this);
-      } else if (this.state.modal === Modals.End) {
-        new EndScreen(this);
-      }
-    } else {
-      new MainScreen(this);
-    }
+    console.log('start')
+    const { centerX } = this.cameras.main;
+    this.add.sprite(0, 0, 'background').setOrigin(0);
+    this.add.text(centerX, 200, 'Выбери свой знак', {
+      fontFamily: Fonts.Nasalization,
+      fontSize: '44px',
+      wordWrap: { width: 300 },
+      align: 'center'
+    }).setOrigin(0.5);
+  }
+
+  private createButton(x: number, y: number, sign: Signs) {
+    const round = this.add.sprite(x, y, 'rect');
+    const icon = this.add.sprite(x, y, sign);
+    const text = this.add.text(x, y, langs[sign], {
+      
+    }).setOrigin(0.5);
   }
 }

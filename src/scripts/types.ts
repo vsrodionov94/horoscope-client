@@ -10,12 +10,28 @@ enum Modals {
 };
 
 enum Fonts {
-  DrukWide = 'DrukWide',
-  FuturaPT = 'FuturaPT',
+  Nasalization = 'Nasalization',
+  GothaPro = 'GothaPro',
+};
+
+enum Signs {
+  Aries = 'aries',
+  Taurus = 'taurus',
+  Gemini = 'gemini',
+  Cancer = 'cancer',
+  Leo = 'leo',
+  Virgo = 'virgo',
+  Libra = 'libra',
+  Scorpio = 'scorpio',
+  Sagittarius = 'sagittarius',
+  Capricorn = 'capricorn',
+  Aquarius = 'aquarius',
+  Pisces = 'pisces',
 };
 
 export {
   State,
   Modals,
   Fonts,
+  Signs,
 };

@@ -18,7 +18,8 @@ export default class BootScene extends Phaser.Scene {
     bridge.send('VKWebAppInit');
     Webfont.load({
       custom: { families: [
-
+        'Nasalization',
+        'GothaPro'
     ] },
       active: () => { this.fontsReady = true },
     });
@@ -28,7 +29,8 @@ export default class BootScene extends Phaser.Scene {
 
   private initUser(): void {
     if (process.env.DEV) {
-      this.state.vkId = 7
+      this.state.vkId = 7;
+      this.userReady = true;
       this.checkUser();
     } else {
       bridge.send('VKWebAppGetUserInfo').then(data => {

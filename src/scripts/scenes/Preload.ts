@@ -31,7 +31,6 @@ const sagittariusIcons = require('../../assets/images/icons/sagittarius.png');
 const capricornIcons = require('../../assets/images/icons/capricorn.png');
 const aquariusIcons = require('../../assets/images/icons/aquarius.png');
 const piscesIcons = require('../../assets/images/icons/pisces.png');
-const ophiuchusIcons = require('../../assets/images/icons/ophiuchus.png');
 const ariesImage = require('../../assets/images/sign/aries.png');
 const taurusImage = require('../../assets/images/sign/taurus.png');
 const geminiImage = require('../../assets/images/sign/gemini.png');
@@ -44,7 +43,6 @@ const sagittariusImage = require('../../assets/images/sign/sagittarius.png');
 const capricornImage = require('../../assets/images/sign/capricorn.png');
 const aquariusImage = require('../../assets/images/sign/aquarius.png');
 const piscesImage = require('../../assets/images/sign/pisces.png');
-const ophiuchusImage = require('../../assets/images/sign/ophiuchus.png');
 
 export default class Preload extends Phaser.Scene {
   public state: State;
@@ -93,7 +91,6 @@ export default class Preload extends Phaser.Scene {
     this.load.image('capricorn-icons', capricornIcons);
     this.load.image('aquarius-icons', aquariusIcons);
     this.load.image('pisces-icons', piscesIcons);
-    this.load.image('ophiuchus-icons', ophiuchusIcons);
     this.load.image('aries-image', ariesImage);
     this.load.image('taurus-image', taurusImage);
     this.load.image('gemini-image', geminiImage);
@@ -106,7 +103,6 @@ export default class Preload extends Phaser.Scene {
     this.load.image('capricorn-image', capricornImage);
     this.load.image('aquarius-image', aquariusImage);
     this.load.image('pisces-image', piscesImage);
-    this.load.image('ophiuchus-image', ophiuchusImage);
   }
 
   public create(): void {

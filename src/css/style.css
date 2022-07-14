@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Nasalization;
+  src: url('../assets/fonts/Nasalization.otf');
+}
+
+@font-face {
+  font-family: GothaPro;
+  src: url('../assets/fonts/GothaPro.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +24,14 @@ html, body { height: 100%; }
 body {
   margin: 0;
   padding: 0;
-  background: #DCF6FB;
+  background: linear-gradient(188.73deg, #150A57 -3.17%, #02072B 45.15%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body::before {
   content: '';
-  background: #0D0E11;
+  background: linear-gradient(188.73deg, #150A57 -3.17%, #02072B 45.15%);
   background-size: cover;
   position: fixed;
   left: 0;
