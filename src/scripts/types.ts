@@ -1,14 +1,14 @@
 type State = {
   vkId: number;
-  sign?: Signs ;
+  sign?: Signs;
+  screen?: Screens;
 };
 
-enum Modals {
-  None,
-  Tutorial,
-  Raitings,
-  End,
-};
+enum Screens {
+  Today = 'Сегодня',
+  Tomorrow = 'Завтра',
+  Week = 'Неделя', 
+}
 
 enum Fonts {
   Nasalization = 'Nasalization',
@@ -32,7 +32,7 @@ enum Signs {
 
 export {
   State,
-  Modals,
+  Screens,
   Fonts,
   Signs,
 };

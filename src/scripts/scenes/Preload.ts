@@ -43,6 +43,7 @@ const sagittariusImage = require('../../assets/images/sign/sagittarius.png');
 const capricornImage = require('../../assets/images/sign/capricorn.png');
 const aquariusImage = require('../../assets/images/sign/aquarius.png');
 const piscesImage = require('../../assets/images/sign/pisces.png');
+const starBg = require('../../assets/images/background-with-star.png');
 
 export default class Preload extends Phaser.Scene {
   public state: State;
@@ -103,6 +104,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('capricorn-image', capricornImage);
     this.load.image('aquarius-image', aquariusImage);
     this.load.image('pisces-image', piscesImage);
+    this.load.image('background-star', starBg);
   }
 
   public create(): void {
