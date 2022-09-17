@@ -1,4 +1,4 @@
-import { State } from './types';
+import { Signs, State } from './types';
 
 const state: State = {
   vkId: 0,

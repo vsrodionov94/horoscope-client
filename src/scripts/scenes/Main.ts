@@ -1,10 +1,10 @@
 import { State } from '../types';
 
-export default class Game extends Phaser.Scene {
+export default class Main extends Phaser.Scene {
   public state: State;
 
   constructor() {
-    super('Game');
+    super('Main');
   }
 
   public init(state: State): void {

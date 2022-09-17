@@ -2,7 +2,7 @@ import '../css/style.css';
 import * as Phaser from 'phaser';
 import Boot from './scenes/Boot';
 import Preload from './scenes/Preload';
-import Game from './scenes/Game';
+import Main from './scenes/Main';
 import Start from './scenes/Start';
 
 const gcd = (num1: number, num2: number): number => {
@@ -55,7 +55,7 @@ window.onload = (): void => {
         Boot,
         Preload,
         Start,
-        Game,
+        Main,
       ],
       loader: { maxParallelDownloads: 128 },
     }

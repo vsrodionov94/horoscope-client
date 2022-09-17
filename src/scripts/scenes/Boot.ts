@@ -1,5 +1,5 @@
 import * as Webfont from '../libs/Webfonts.js';
-import { State } from '../types';
+import { Fonts, State } from '../types';
 import state from '../state';
 import api from '../libs/Api';
 import bridge from '@vkontakte/vk-bridge';
@@ -18,8 +18,8 @@ export default class BootScene extends Phaser.Scene {
     bridge.send('VKWebAppInit');
     Webfont.load({
       custom: { families: [
-        'Nasalization',
-        'GothaPro'
+        Fonts.Nasalization,
+        Fonts.GothaPro,
     ] },
       active: () => { this.fontsReady = true },
     });

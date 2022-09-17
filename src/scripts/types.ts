@@ -1,5 +1,6 @@
 type State = {
   vkId: number;
+  sign?: Signs ;
 };
 
 enum Modals {
