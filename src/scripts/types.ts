@@ -2,6 +2,8 @@ type State = {
   vkId: number;
   sign?: Signs;
   screen?: Screens;
+  day: number;
+  stars: number;
 };
 
 enum Screens {

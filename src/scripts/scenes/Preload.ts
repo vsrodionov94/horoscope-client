@@ -14,6 +14,7 @@ const tutorialWindow = require('../../assets/images/tutorial-window.png');
 const star = require('../../assets/images/star.png');
 const rect = require('../../assets/images/rect.png');
 const selectedRect = require('../../assets/images/selected-rect.png');
+const moonClear = require('../../assets/images/moon/clear.png');
 const moonStage1 = require('../../assets/images/moon/stage-1.png');
 const moonStage2 = require('../../assets/images/moon/stage-2.png');
 const moonStage3 = require('../../assets/images/moon/stage-3.png');
@@ -44,6 +45,7 @@ const capricornImage = require('../../assets/images/sign/capricorn.png');
 const aquariusImage = require('../../assets/images/sign/aquarius.png');
 const piscesImage = require('../../assets/images/sign/pisces.png');
 const starBg = require('../../assets/images/background-with-star.png');
+const pixel = require('../../assets/images/pixel.png');
 
 export default class Preload extends Phaser.Scene {
   public state: State;
@@ -61,6 +63,7 @@ export default class Preload extends Phaser.Scene {
   }
 
   private preloadAssets(): void {
+    this.load.image('pixel', pixel);
     this.load.image('background', background);
     this.load.image('scroll', scroll);
     this.load.image('scroll-background', scrollBackground);
@@ -75,6 +78,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('star', star);
     this.load.image('rect', rect);
     this.load.image('selected-rect', selectedRect);
+    this.load.image('moon-clear', moonClear);
     this.load.image('moon-stage1', moonStage1);
     this.load.image('moon-stage2', moonStage2);
     this.load.image('moon-stage3', moonStage3);
